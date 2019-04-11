@@ -1,8 +1,8 @@
 #pragma once
 void editMap();
 
-void gotoxy();
+void gotoxy(int x, int y);
 
-void saveMap();
+void saveMap(int map[][25]);
  
-void readMap();
+void readMap(int map[][25]);
