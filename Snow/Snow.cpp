@@ -3,6 +3,7 @@
 #include "EditMapHeader.h"
 #include "SetupHeader.h"
 #include "GameHeader.h"
+#include "threeHeader.h"
 #include <iostream>
 #include <windows.h>
 #include <conio.h>
@@ -21,7 +22,7 @@ int menu() {
 	string	A = "START           ",
 			B = "EDITING THE MAP ",
 			C = "SETUP           ",
-			D = "EXIT            ";
+			D = "THREE           ";
 		
 
 	system("cls");
@@ -122,7 +123,7 @@ void startMenu(){
 		setup();
 	}
 	else if (parametrMenu == 4) {
-		cout << "TIP VSE";
+		three();
 	}
 
 }

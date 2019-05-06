@@ -98,10 +98,21 @@ void removeAllMap(int map[][25]) {
 	outlineMap(map);
 }
 
+void removeAllSnow(int map[][25]) {
+	for (int i = 0; i < 80; i++) {
+		for (int j = 3; j < 25; j++) {
+			if (map[i][j] == 42) {
+				map[i][j] = 0;
+			}
+		}
+	}
+	
+}
+
 void showMap(int map[][25]) {
 	system("cls");
 	gotoxy(0, 0);
-	cout << "TO SAVE, PRESS         \"S\"  ";
+	cout << "TO SAVE, PRESS         \"S\"    REMOVE ALL SNOWFLAKE, PRESS \"F\"  ";
 	gotoxy(0, 1);
 	cout << "REMOVE 1 ITEM, PRESS   \"D\"  ";
 	gotoxy(0, 2);
@@ -158,6 +169,10 @@ void fillingMap(int map[][25]) {
 		if (i == 100) {
 			map[x][y] = 0;
 			cout << (char)0;
+		}
+		if (i == 102) {
+			removeAllSnow(map);
+			showMap(map);
 		}
 		
 		if (x < 1) {

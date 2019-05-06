@@ -27,6 +27,9 @@
     <ClInclude Include="GameHeader.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
+    <ClInclude Include="threeHeader.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -42,6 +45,9 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Game.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="three.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

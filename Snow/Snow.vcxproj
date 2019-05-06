@@ -155,6 +155,7 @@
     <ClInclude Include="GameHeader.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="SetupHeader.h" />
+    <ClInclude Include="threeHeader.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EditMap.cpp" />
@@ -167,6 +168,7 @@
     </ClCompile>
     <ClCompile Include="Setup.cpp" />
     <ClCompile Include="Snow.cpp" />
+    <ClCompile Include="three.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

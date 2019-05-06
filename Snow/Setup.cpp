@@ -166,7 +166,7 @@ int FallSpeed() {
 	system("cls");
 	cout << "ENTER THE FALL SPEDD: ";
 	fallSpeed = getValue();
-	if (fallSpeed > 10000 || fallSpeed < 500) {
+	if (fallSpeed > 10000 || fallSpeed < 0) {
 		cout << "WRONG FALL SPEED";
 		system("pause");
 		return 1000;
@@ -183,7 +183,7 @@ int NumberKey(int num, int num1, int num2) {
 		j = _getch();
 		num3 = j;
 	}
-	if (num3 == num1 || num3 == num2 || num3 == 27 ) {
+	if (num3 == num1 || num3 == num2 || num3 == 27 || num3 == 115 ) {
 		cout << "INPUT ERROR";
 		system("pause");
 		return num;
